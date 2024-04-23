@@ -1,0 +1,25 @@
+~~~~~> GUIA DE INSTALACAO:
+
+=> Não foram usados ficheiros de áudio adicionais, todas as falas são geradas recorrendo ao script do tradutor do Google em tempo real.
+
+=> Para facilitar a testagem, o sript de consulta do preço do stock é encontrado em “home/mint/Desktop/webscraper.py”.
+ NO ENTANTO, na linha 232 do extensions.conf podemos alterar a localização do script: 
+--------------------------------------------------------------------------------------
+232| same => n,Set(command_output=${SHELL(python3 /home/mint/Desktop/webscraper.py)})
+--------------------------------------------------------------------------------------
+
+=> Sendo assim é apenas preciso substituir os ficheiros sip.conf e extensions.conf em
+"etc/asterisk" e copiar "webscraper.py" para o Desktop (ou para outra localização se assim decidiu após leitura do ponto anterior).
+
+=> Finalmente, basta ligar para a extensão "96203", referente ao menor número do nosso grupo. Onde esperamos que todas as funcionalidades não tenham erros.
+
+~~~~~> NOTA ADICIONAL:
+
+=> Para marcar uma Wake-up call é importante que se siga a instrução dada corretamente.
+ Por isso, quando a senhora do Google diz "At the signal (...)" é importante que só se comece a marcar a hora, nos botões, quando se ouvir o sinal ("beeep"). 
+
+
+
+ 
+
+
